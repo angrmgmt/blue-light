@@ -9,3 +9,18 @@
 # https://docs.deno.com/runtime/reference/cli/coverage/
 coverage/
 *.lcov
+
+# output directory
+output/
+
+# AI Agents and IDE directories
+.junie/
+.claude/
+.idea/
+.zencoder/
+
+# Debug files
+debug_*
+debug_*.json
+debug.html
+debug.log

@@ -1,0 +1,14 @@
+{
+  "deno.enable": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.prettier": "never",
+      "source.fixAll.markdownlint": "never"
+    }
+  },
+  "markdown.extension.list.indentationSize": "inherit"
+}

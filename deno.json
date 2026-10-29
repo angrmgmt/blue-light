@@ -1,0 +1,39 @@
+{
+  "fmt": {
+    "exclude": [
+      "*.html",
+      "*.mp3",
+      "*.txt",
+      "debug_*.json",
+      "debug_*",
+      "output/",
+      ".junie/",
+      ".idea/",
+      ".zencoder/",
+      ".claude/"
+    ]
+  },
+  "imports": {
+    "@andresaya/edge-tts": "npm:@andresaya/edge-tts@1.9.1",
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/cli": "jsr:@std/cli@1",
+    "@std/fs": "jsr:@std/fs@1",
+    "@std/http": "jsr:@std/http@1",
+    "deno-dom": "jsr:@b-fuze/deno-dom@^0.1.56"
+  },
+  "lint": {
+    "exclude": [
+      "debug_*",
+      "output/",
+      ".junie/",
+      ".idea/",
+      ".zencoder/",
+      ".claude/"
+    ]
+  },
+  "tasks": {
+    "check": "deno check **/*.ts",
+    "dev": "deno run --watch main.ts",
+    "test": "deno test --allow-env --allow-write --allow-read"
+  }
+}
