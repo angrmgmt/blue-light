@@ -13,6 +13,9 @@ coverage/
 # output directory
 output/
 
+# output-like files
+*.mp3
+
 # AI Agents and IDE directories
 .junie/
 .claude/
